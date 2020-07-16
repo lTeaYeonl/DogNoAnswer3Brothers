@@ -6,8 +6,48 @@
 <meta charset="UTF-8">
 <title>GnD Entertainment</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath }/css/bootstrap.css" />
+<!-- fontawesome 에서 제공해주는 icon을 사용하기 위해 로딩  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous /">
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-light pixed-top">
+	  <a class="navbar-brand" href="index.jsp">
+	  	<img src="${pageContext.request.contextPath }/image/L_gnd.png" alt="GnD_Logo" />
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">뉴스 <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">플레이리스트</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">아티스트</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">뉴스레터구독</a>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="social-icon">
+	  	<a href="https://www.facebook.com/warnermusickorea/">
+	  		<i class="fab fa-facebook-f"></i>
+	    </a>
+	  	<a href="https://www.instagram.com/warnermusickorea/">
+	  		<i class="fab fa-youtube"></i>
+	    </a>
+	  	<a href="https://www.youtube.com/user/WMK2011">
+	  		<i class="fab fa-instagram"></i>
+	    </a>
+	  	<a href="https://twitter.com/Warner_Music_Kr">
+	  		<i class="fab fa-twitter"></i>
+	    </a>
+	  </div>
+	</nav>
 	<div class="container-fluid px-0">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
