@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous /">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-light pixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark pixed-top">
 	  <a class="navbar-brand" href="index.jsp">
 	  	<img src="${pageContext.request.contextPath }/image/L_gnd.png" alt="GnD_Logo" />
 	  </a>
@@ -127,8 +127,43 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
+		<!-- 최신 뮤직비디오 컨텐츠 -->
+		<div class="container">
+			<h5>최신 뮤직비디오</h5>
+			<div class="container mv_modal">
+				<a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/O7aVngLigBE">VIDEO</a>
+				<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    				<div class="modal-dialog">
+        				<div class="modal-content">
+            				<div class="modal-body">
+                				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                	<div>
+			                    	<iframe width="100%" height="350" src=""></iframe>
+			                	</div>
+			            	</div>
+			        	</div>
+			    	</div>
+				</div>
+			</div>
+		</div>
 	</div>
-<script src="${pageContext.request.contextPath }/js/jquery-3.5.1.js"></script>
-<script src="${pageContext.request.contextPath }/js/bootstrap.js"></script>
+	<script src="${pageContext.request.contextPath }/js/jquery-3.5.1.js"></script>
+	<script src="${pageContext.request.contextPath }/js/bootstrap.js"></script>
+	<script>
+	  autoPlayYouTubeModal();
+	  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+	  function autoPlayYouTubeModal() {
+	      var trigger = $("body").find('[data-toggle="modal"]');
+	      trigger.click(function () {
+	          var theModal = $(this).data("target"),
+	              videoSRC = $(this).attr("data-theVideo"),
+	              videoSRCauto = videoSRC + "?autoplay=1";
+	          $(theModal + ' iframe').attr('src', videoSRCauto);
+	          $(theModal + ' button.close').click(function () {
+	              $(theModal + ' iframe').attr('src', videoSRC);
+	          });
+	      });
+	  }
+	</script>
 </body>
 </html>
