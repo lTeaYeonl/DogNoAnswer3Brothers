@@ -59,6 +59,7 @@
 			</a>
 		</div>
 	</nav>
+	<!-- Carousel Image -->
 	<div class="container-fluid px-0">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -146,7 +147,8 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<!-- 최신 뮤직비디오 컨텐츠 -->
+		<!-- Carousel Image -->
+		<!-- New Music Video -->
 		<div class="container">
 			<div class="row">
 				<div class="col mt-5">
@@ -189,6 +191,31 @@
 				</div>
 			</div>
 		</div>
+		<!-- New Music Video -->
+		<!-- Latest News -->
+		<div class="container">
+			<div class="container">
+				<div class="col mt-5">
+					<p style="font-size: 12px;color: #a3a3a3;line-height: 1;text-align: center;letter-spacing: 0px;">새로운 소식</p>
+					<h3 style="font-size: 30px;line-height: 1;text-align: center;letter-spacing: 0px;">Lastest News</h3>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col mt-5">
+					<div class="row">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="${pageContext.request.contextPath }/image/test1.jpg" alt="Card image cap">
+						 	<div class="card-body">
+						    	<h5 class="card-title">앤-마리, 도자 캣과 함께한 싱글 'To Be Young(feat.Doja Cat)' 발매</h5>
+						    	<p class="card-text">2019 국내 음원차트 1위, 앤-마리 새 싱글 ‘To Be Young’ 7월 17일 정오 발매 ‘국민 팝스타’ 앤-마리(Anne-Marie)가 7월 17일 정오에 새 싱글 ‘To Be Young’을 발매한다....</p>
+						    	<a href="#" class="btn btn-primary">더보기 ></a>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Latest News -->
 	</div>
 	<script src="${pageContext.request.contextPath }/js/jquery-3.5.1.js"></script>
 	<script src="${pageContext.request.contextPath }/js/bootstrap.js"></script>
